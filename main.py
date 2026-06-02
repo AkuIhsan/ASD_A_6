@@ -193,7 +193,10 @@ def cari_dokumen() :
         console.print(Rule("[bold red]Pilihan tidak valid[/bold red]"))
         return
 
-    keyword = console.input("Masukkan keyword pencarian : ").strip().lower()
+    if param == "4" :
+        keyword = console.input("Masukkan keyword pencarian (YYYY-MM-DD) : ").strip().lower()
+    else:
+        keyword = console.input("Masukkan keyword pencarian : ").strip().lower()
 
     if not keyword :
         console.print(Rule("[bold red]Keyword tidak boleh kosong[/bold red]"))
@@ -242,7 +245,14 @@ def cari_dokumen() :
 
     console.print(Rule("[bold cyan]Hasil Pencarian[/bold cyan]"))
     if hasil_ditemukan == 0 :
-        console.print(Rule(f"[bold red]Tidak ada dokumen yang cocok dengan keyword '{keyword}'[/bold red]"))
+        if param == "1" :
+            console.print(Rule(f"[bold red] Dokumen dengan Judul '{keyword}' Tidak Ada [/bold red]"))
+        elif param == "2" :
+            console.print(Rule(f"[bold red] Dokumen dengan Penulis '{keyword}' Tidak Ada [/bold red]"))
+        elif param == "3" :
+            console.print(Rule(f"[bold red] Dokumen dengan Index '{keyword}' Tidak Ada [/bold red]"))
+        elif param == "4" :
+            console.print(Rule(f"[bold red]Tidak ada Dokumen yang diinput pada'{keyword}'[/bold red]"))
     else :
         console.print(f"Ditemukan [bold green]{hasil_ditemukan}[/bold green] dokumen dengan keyword '[bold]{keyword}[/bold]'")
         console.print(table)
