@@ -1,4 +1,4 @@
-# TuDO
+# TuDo
 
 ## Definisi
 Tudo adalah sebuah program berbasis CLI yang berfungsi untuk mengatur tumpukan dokumen, program ini berguna bagi anda yang bekerja di bidang administrasi.
