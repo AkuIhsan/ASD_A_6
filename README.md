@@ -4,7 +4,7 @@
 Tudo adalah sebuah program berbasis CLI yang berfungsi untuk mengatur tumpukan dokumen, program ini berguna bagi anda yang bekerja di bidang administrasi.
 
 ##
-Menggunakan dua tipe data stuktur :
+Menggunakan dua tipe data stuktur :  
 1.Stack  
 2.Queue  
 
