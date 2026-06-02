@@ -172,7 +172,80 @@ def ambil_dokumen() :
 
 
 def cari_dokumen() :
-    pass
+    if not Cek_Keberadaan_File(PathTumpukanExist) :
+        console.print(Rule("[bold red]Tumpukan belum ada[/bold red]"))
+        return
+
+    if len(tumpukan.data) == 0 :
+        console.print(Rule("[bold red]Tumpukan masih kosong[/bold red]"))
+        return
+
+    console.print(Rule("[bold cyan]Cari Dokumen[/bold cyan]"))
+    console.print("[bold]Cari berdasarkan :[/bold]")
+    console.print("  [cyan]1.[/cyan] Judul")
+    console.print("  [cyan]2.[/cyan] Penulis / Author")
+    console.print("  [cyan]3.[/cyan] Index / Urutan")
+    console.print("  [cyan]4.[/cyan] Waktu Input")
+
+    param = console.input("\nPilih parameter pencarian (1-4) : ").strip()
+
+    if param not in ["1", "2", "3", "4"] :
+        console.print(Rule("[bold red]Pilihan tidak valid[/bold red]"))
+        return
+
+    keyword = console.input("Masukkan keyword pencarian : ").strip().lower()
+
+    if not keyword :
+        console.print(Rule("[bold red]Keyword tidak boleh kosong[/bold red]"))
+        return
+
+    table = Table(show_header=True, header_style="bold magenta")
+    table.add_column("No",       style="bold",    width=4)
+    table.add_column("Judul",    style="cyan")
+    table.add_column("Author",   style="green")
+    table.add_column("Index / Urutan", style="yellow", width=14)
+    table.add_column("Waktu Input", style="dim")
+
+    hasil_ditemukan = 0
+    nomor_tampil = 1
+
+    for index, dokumen in enumerate(tumpukan.data) :
+        judul  = dokumen.get('judul',  '')
+        author = dokumen.get('author', '')
+        waktu  = dokumen.get('waktu',  '')
+        urutan = str(index + 1)
+
+        cocok = False
+
+        if param == "1" :
+            cocok = keyword in judul.lower()
+
+        elif param == "2" :
+            cocok = keyword in author.lower()
+
+        elif param == "3" :
+            cocok = keyword == urutan
+
+        elif param == "4" :
+            cocok = keyword in waktu.lower()
+
+        if cocok :
+            table.add_row(
+                str(nomor_tampil),
+                judul,
+                author,
+                urutan,
+                waktu
+            )
+            hasil_ditemukan += 1
+            nomor_tampil += 1
+
+    console.print(Rule("[bold cyan]Hasil Pencarian[/bold cyan]"))
+    if hasil_ditemukan == 0 :
+        console.print(Rule(f"[bold red]Tidak ada dokumen yang cocok dengan keyword '{keyword}'[/bold red]"))
+    else :
+        console.print(f"Ditemukan [bold green]{hasil_ditemukan}[/bold green] dokumen dengan keyword '[bold]{keyword}[/bold]'")
+        console.print(table)
 
 def buat_taruh_dokumen() :
     if Cek_Keberadaan_File(PathAntrianExist) :
@@ -262,6 +335,7 @@ def main() :
             simpan_perubahan_tumpukan()
 
         elif pilihan == "7" :
+            system("cls" if name == "nt" else "clear")
             cari_dokumen()
 
         elif pilihan == "9" :
