@@ -7,4 +7,107 @@
     "author": "Ihsan",
     "waktu": "2026-05-31 21:15:42.123456"
   }
+  {
+    "ukuran": 20
+  },
+  {
+    "judul": "Laporan Evaluasi Sistem Informasi PT Aruna Teknologi",
+    "author": "Mori",
+    "waktu": "2026-01-15 08:30:12.456123"
+  },
+  {
+    "judul": "Analisis Performa Algoritma Sorting pada Big Data",
+    "author": "Rehan",
+    "waktu": "2026-01-20 14:22:05.891234"
+  },
+  {
+    "judul": "Penerapan Adjacency List pada Graph Teori",
+    "author": "Hasan",
+    "waktu": "2026-02-02 10:15:33.112233"
+  },
+  {
+    "judul": "Dokumentasi API Sistem Manajemen Tumpukan Dokumen",
+    "author": "Asep",
+    "waktu": "2026-02-11 19:45:18.654321"
+  },
+  {
+    "judul": "Proposal Proyek Akhir Praktikum Struktur Data",
+    "author": "Ibra",
+    "waktu": "2026-02-28 07:11:59.001234"
+  },
+  {
+    "judul": "Optimasi Database Postgres menggunakan Indexing",
+    "author": "Ivan",
+    "waktu": "2026-03-05 13:02:44.789123"
+  },
+  {
+    "judul": "Modul Pembelajaran Binary Search Tree Tingkat Lanjut",
+    "author": "Bayu",
+    "waktu": "2026-03-19 16:35:21.334455"
+  },
+  {
+    "judul": "Analisis Keamanan Jaringan Menggunakan Wireshark",
+    "author": "Adit",
+    "waktu": "2026-04-01 09:20:02.998877"
+  },
+  {
+    "judul": "Perancangan Antarmuka Aplikasi CLI dengan Library Rich",
+    "author": "Ilham",
+    "waktu": "2026-04-12 23:58:14.121212"
+  },
+  {
+    "judul": "Laporan Keuangan Pengembangan Sistem Enkripsi Data",
+    "author": "Insan",
+    "waktu": "2026-04-25 11:40:50.556677"
+  },
+  {
+    "judul": "Review Jurnal Implementasi Tumpukan Berbasis LIFO",
+    "author": "Mishbah",
+    "waktu": "2026-05-03 08:05:27.443322"
+  },
+  {
+    "judul": "Panduan Instalasi Python Environment pada Windows 11",
+    "author": "Hamizan",
+    "waktu": "2026-05-14 15:19:36.182736"
+  },
+  {
+    "judul": "Studi Kasus Penanganan Bug NameError pada Perulangan Python",
+    "author": "Azhar",
+    "waktu": "2026-05-20 17:42:09.909090"
+  },
+  {
+    "judul": "Rencana Kerja Audit Infrastruktur Cloud Server PT Samudra",
+    "author": "Fuad",
+    "waktu": "2026-05-31 21:15:42.123456"
+  },
+  {
+    "judul": "Implementasi Sequential Search untuk Manajemen Arsip",
+    "author": "Aul",
+    "waktu": "2026-06-01 10:30:00.654321"
+  },
+  {
+    "judul": "Laporan Praktikum 11 Adjacency Matrix Kelompok 3",
+    "author": "Raffan",
+    "waktu": "2026-06-02 11:24:15.887766"
+  },
+  {
+    "judul": "Arsitektur Microservices Berbasis Node.js dan Docker",
+    "author": "Ibruy",
+    "waktu": "2026-06-02 14:55:32.111222"
+  },
+  {
+    "judul": "Pengujian Blackbox Testing pada Form Validasi Registrasi",
+    "author": "Edi",
+    "waktu": "2026-06-03 09:12:47.343434"
+  },
+  {
+    "judul": "Analisis Komparasi Kinerja Queue vs Stack dalam Memory Allocation",
+    "author": "Aceng",
+    "waktu": "2026-06-03 10:01:05.555555"
+  },
+  {
+    "judul": "Master Plan Integrasi Sistem Informasi Akademik Kampus",
+    "author": "Pablo",
+    "waktu": "2026-06-03 11:15:22.000001"
+  }
 ]
